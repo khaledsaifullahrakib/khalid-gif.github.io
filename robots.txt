@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://khalidsaifullahrakib.github.io/sitemap.xml

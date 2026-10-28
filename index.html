@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The professional portfolio of Khalid Saifullah Rakib — Islamic educator, Da‘i, writer, imam and khateeb based in Bangladesh.">
+  <meta name="author" content="Khalid Saifullah Rakib">
+  <meta name="theme-color" content="#101d35">
+  <title>Khalid Saifullah Rakib | Islamic Educator & Da‘i</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#101d35;--navy2:#1b2d4c;--gold:#c9a96e;--ink:#202b3b;--muted:#647084;--paper:#f7f8fa;--white:#fff;--line:#e5e9ef;--max:1120px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth;scroll-padding-top:86px}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;line-height:1.7}
+    a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin-inline:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(16,29,53,.97);backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+    .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:700;letter-spacing:.02em;line-height:1.25}.brand span{display:block;color:#d8c39e;font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;margin-top:4px}
+    nav{display:flex;align-items:center;gap:20px;font-size:.9rem;color:#e9edf4}nav a:hover{color:#e3c58d}
+    .menu-btn{display:none;background:transparent;border:1px solid #718098;color:white;border-radius:8px;padding:8px 12px}
+    .hero{background:radial-gradient(ellipse at 85% 15%,#2c4265 0,transparent 40%),linear-gradient(125deg,var(--navy),#172844);color:white;padding:92px 0 86px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:60px;align-items:center}
+    .eyebrow{color:#e0c48f;text-transform:uppercase;font-size:.78rem;letter-spacing:.18em;font-weight:700}
+    h1,h2,h3{line-height:1.2;margin:0 0 18px}h1,h2{font-family:"Playfair Display",Georgia,serif}h1{font-size:clamp(2.5rem,5vw,4.6rem);letter-spacing:-.035em;margin-top:14px}h1 em{font-style:normal;color:#e0c48f}
+    .hero p{color:#d7dfeb;font-size:1.08rem;max-width:650px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;border-radius:7px;padding:12px 18px;font-weight:700;font-size:.92rem;border:1px solid transparent;cursor:pointer}
+    .btn-gold{background:var(--gold);color:#111c2e}.btn-outline{border-color:#8794a8;color:white}.btn-outline:hover{background:rgba(255,255,255,.08)}
+    .portrait{justify-self:center;width:min(300px,100%);aspect-ratio:4/5;border:1px solid rgba(224,196,143,.65);border-radius:160px 160px 18px 18px;padding:10px;background:rgba(255,255,255,.04)}
+    .portrait-inner{width:100%;height:100%;border-radius:150px 150px 12px 12px;background:linear-gradient(150deg,#e7e9ed,#cbd2dc);display:flex;align-items:center;justify-content:center;text-align:center;color:#4b586a;padding:24px;font-size:.92rem}
+    .portrait-inner small{display:block;margin-top:8px}
+    .section{padding:78px 0}.section.white{background:white}.section-head{max-width:700px;margin-bottom:34px}.section-head h2{font-size:clamp(2rem,3vw,2.8rem);color:var(--navy)}.section-head p{color:var(--muted);margin:0}
+    .kicker{font-size:.75rem;color:#9a793f;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:10px}
+    .about-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:50px}.about-copy p{margin-top:0;color:#4b5668}
+    .quickfacts{background:#f6f3ed;border:1px solid #eee4d2;border-radius:12px;padding:26px}.quickfacts h3{color:var(--navy);font-size:1.1rem}.quickfacts ul{list-style:none;padding:0;margin:0}.quickfacts li{padding:10px 0;border-bottom:1px solid #e8dfd1}.quickfacts li:last-child{border:0}.quickfacts strong{display:block;font-size:.82rem;color:#7b6748;text-transform:uppercase;letter-spacing:.06em}.quickfacts span{font-size:.95rem}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:12px;padding:24px;box-shadow:0 6px 24px rgba(16,29,53,.035)}.card .num{font-size:.78rem;color:#a17d42;font-weight:700;letter-spacing:.12em}.card h3{color:var(--navy);font-size:1.12rem;margin:10px 0}.card p{color:var(--muted);font-size:.93rem;margin:0}.card .meta{display:block;color:#8a6d3c;font-size:.82rem;font-weight:600;margin-top:12px}
+    .timeline{border-left:2px solid #d9c39a;margin-left:8px;padding-left:26px;display:grid;gap:24px}.timeline-item{position:relative}.timeline-item:before{content:"";position:absolute;left:-34px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:3px solid white;box-shadow:0 0 0 1px #d9c39a}.timeline-item h3{font-size:1.1rem;color:var(--navy);margin-bottom:5px}.timeline-item .date{font-size:.83rem;color:#94743e;font-weight:700}.timeline-item p{margin:6px 0 0;color:var(--muted)}
+    .skill-list{display:flex;flex-wrap:wrap;gap:10px}.pill{background:white;border:1px solid var(--line);padding:9px 13px;border-radius:999px;font-size:.9rem;color:#3f4b5e}
+    .media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.media-card{background:white;border:1px solid var(--line);border-radius:12px;overflow:hidden}.media-placeholder{aspect-ratio:16/10;background:linear-gradient(135deg,#e6e9ee,#f8f5ef);display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;color:#5c687a;font-size:.9rem}.media-body{padding:18px}.media-body h3{font-size:1rem;color:var(--navy);margin-bottom:7px}.media-body p{font-size:.9rem;color:var(--muted);margin:0}
+    .notice{border-left:3px solid var(--gold);padding:12px 16px;background:#f8f4ec;color:#5d5b55;font-size:.9rem;border-radius:0 8px 8px 0;margin-top:20px}
+    .social-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.social{display:flex;align-items:center;gap:14px;background:white;border:1px solid var(--line);padding:18px;border-radius:10px;font-weight:700;color:var(--navy)}.social .icon{width:42px;height:42px;display:grid;place-items:center;border-radius:10px;background:#f3eee4;color:#886b39;font-size:1.05rem}.social small{display:block;font-size:.8rem;font-weight:400;color:var(--muted)}
+    .contact{background:var(--navy);color:white}.contact .section-head h2{color:white}.contact .section-head p{color:#d4dce8}.contact-row{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}.contact a.email{color:#e2c58e;font-weight:700;overflow-wrap:anywhere}
+    footer{background:#0b1527;color:#b9c3d1;padding:24px 0;font-size:.83rem}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .small-note{font-size:.82rem;color:var(--muted)}
+    @media(max-width:850px){nav{gap:12px;font-size:.82rem}.hero-grid{gap:28px}.cards{grid-template-columns:repeat(2,1fr)}.media-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:650px){.wrap{width:min(var(--max),calc(100% - 30px))}.nav{min-height:64px}.menu-btn{display:block}nav{display:none;position:absolute;top:64px;left:0;right:0;background:var(--navy);padding:16px 22px 22px;flex-direction:column;align-items:flex-start;border-top:1px solid #34415a}nav.open{display:flex}.hero{padding:62px 0 58px}.hero-grid,.about-grid{grid-template-columns:1fr}.hero-grid{gap:35px}.portrait{width:220px;grid-row:1}.hero-copy{text-align:center}.hero p{margin-inline:auto}.hero-actions{justify-content:center}.section{padding:58px 0}.cards,.media-grid,.social-grid{grid-template-columns:1fr}.about-grid{gap:25px}.section-head{margin-bottom:25px}}
+  </style>
+<link rel="canonical" href="https://khalidsaifullahrakib.github.io/">
+  <meta property="og:type" content="website"><meta property="og:title" content="Khalid Saifullah Rakib | Islamic Educator &amp; Da‘i"><meta property="og:description" content="Islamic scholar, Da‘i, Imam &amp; Khateeb in Dhaka, Bangladesh."><meta property="og:url" content="https://khalidsaifullahrakib.github.io/"><meta property="og:image" content="https://khalidsaifullahrakib.github.io/assets/photos/profile.jpg">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Khalid Saifullah Rakib","alternateName":"খালিদ সাইফুল্লাহ রাকিব","url":"https://khalidsaifullahrakib.github.io/","image":"https://khalidsaifullahrakib.github.io/assets/photos/profile.jpg","jobTitle":"Islamic Educator, Da‘i, Imam & Khateeb","worksFor":{"@type":"Organization","name":"As-Sunnah Foundation"},"address":{"@type":"PostalAddress","addressLocality":"Dhaka","addressCountry":"BD"},"sameAs":["https://www.facebook.com/share/1HWPkJNRuT/"]}</script>
+  <style>.media-card img{width:100%;height:230px;object-fit:cover;display:block}.cert-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;margin-top:28px}.cert-grid img{width:100%;border:1px solid var(--line);border-radius:8px;display:block}.cert-grid figcaption{font-size:.85rem;color:var(--muted);margin-top:6px}.cert-grid figure{margin:0}.social-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))!important}</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">Khalid Saifullah Rakib<span>Islamic Educator &amp; Da‘i</span></a>
+    <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false" onclick="const n=document.getElementById('navlinks');const o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">Menu ☰</button>
+    <nav id="navlinks" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#qualifications">Qualifications</a><a href="#experience">Experience</a><a href="#media">Media</a><a href="#writing">Writing</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">Islamic Education · Dawah · Qur’an</div>
+        <h1>Khalid Saifullah <em>Rakib</em></h1>
+        <p>Islamic Educator, Da‘i, Writer, Imam &amp; Khateeb based in Bangladesh. Dedicated to Qur’an education, Islamic learning, student guidance, and communicating Islamic teachings with wisdom and clarity.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#about">Explore My Profile</a>
+          <a class="btn btn-outline" href="#contact">Get in Touch</a>
+          <!-- Add a public-safe CV PDF to assets and uncomment the link below when ready. -->
+          <!-- <a class="btn btn-outline" href="assets/Khalid-Saifullah-Rakib-Public-CV.pdf" download>Download CV</a> -->
+        </div>
+      </div>
+      <div class="portrait" aria-label="Profile photo placeholder">
+        <img src="assets/photos/profile.jpg" alt="Khalid Saifullah Rakib" style="width:100%;height:100%;object-fit:cover;border-radius:150px 150px 12px 12px">
+      </div>
+    </div>
+  </section>
+
+  <section class="section white" id="about">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">About Me</div><h2>Teaching, learning and sharing beneficial knowledge</h2><p>A concise professional introduction based on my education and experience.</p></div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I am an Islamic educator and Da‘i with a background in Dawra-e-Hadith, Takhassus fi al-Ifta, Qur’anic studies, and Islamic Dawah. My work includes Islamic education, Qur’an and Tajweed teaching, student guidance, public speaking, Khutbah and Imamat.</p>
+          <p>I am currently associated with As-Sunnah Foundation in Bangladesh, serving in the English Language Program with responsibilities related to Islamic education and student guidance. I have experience working with both general-educated and Islamic-educated learners, and I am interested in explaining Islamic teachings in ways that are clear, thoughtful and relevant to contemporary questions.</p>
+          <p>This website brings together my professional profile, qualifications, educational activities, media, writing and public contact links.</p>
+        </div>
+        <aside class="quickfacts">
+          <h3>Profile at a Glance</h3>
+          <ul>
+            <li><strong>Based in</strong><span>Dhaka, Bangladesh</span></li>
+            <li><strong>Current association</strong><span>As-Sunnah Foundation</span></li>
+            <li><strong>Core areas</strong><span>Qur’an, Tajweed, Islamic Studies, Dawah</span></li>
+            <li><strong>Professional interests</strong><span>Teaching, writing, public speaking, student guidance</span></li>
+            <li><strong>Languages listed in CV</strong><span>Bangla, Arabic, English, Urdu, Hindi</span></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qualifications">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Education &amp; Qualifications</div><h2>Academic and Islamic studies</h2><p>Qualifications and training, with selected certificates below.</p></div>
+      <div class="cards">
+        <article class="card"><span class="num">01 / SPECIALIZATION</span><h3>Takhassus fi al-Ifta</h3><p>Jamia Arabia Robiul Ulum, Dhaka</p><span class="meta">2024–2025 · Result: Mumtaz</span></article>
+        <article class="card"><span class="num">02 / DIPLOMA</span><h3>Post Graduate Diploma in Islamic Dawah</h3><p>As-Sunnah Foundation</p><span class="meta">2024–2025</span></article>
+        <article class="card"><span class="num">03 / HADITH</span><h3>Dawra-e-Hadith</h3><p>Jamia Rahmania Arabia, Mohammadpur, Dhaka</p><span class="meta">2022 (1443 H) · Jaiyid Jiddan</span></article>
+        <article class="card"><span class="num">04 / QUR’AN</span><h3>Tahfiz al-Qur’an</h3><p>Abdullah Bin Omor (RA) Madrasah</p><span class="meta">Completed 2011 · Result: Mumtaz (First Position)</span></article>
+        <article class="card"><span class="num">05 / TRAINING</span><h3>Relevant Training</h3><p>Noorani Training, Public Speaking, English Language, Basic Computer, Bengali Language &amp; Literature.</p></article>
+        <article class="card"><span class="num">06 / SKILLS</span><h3>Professional Skills</h3><p>Qur’an &amp; Tajweed teaching, Islamic Studies &amp; Hadith, Dawah, Khutbah, Imamat, counselling, coordination, writing and digital learning.</p></article>
+      </div>
+      <div class="cert-grid"><figure><a href="assets/certificates/dawra-e-hadith.jpg" target="_blank"><img loading="lazy" src="assets/certificates/dawra-e-hadith.jpg" alt="Dawra-e-Hadith (Takmil/Master’s) certificate"></a><figcaption>Dawra-e-Hadith (Takmil/Master’s)</figcaption></figure><figure><a href="assets/certificates/pgdid.jpg" target="_blank"><img loading="lazy" src="assets/certificates/pgdid.jpg" alt="Post Graduate Diploma in Islamic Dawah certificate"></a><figcaption>Post Graduate Diploma in Islamic Dawah</figcaption></figure><figure><a href="assets/certificates/english-course.jpg" target="_blank"><img loading="lazy" src="assets/certificates/english-course.jpg" alt="Essential English Course (A1) certificate"></a><figcaption>Essential English Course (A1)</figcaption></figure><figure><a href="assets/certificates/basic-computer.jpg" target="_blank"><img loading="lazy" src="assets/certificates/basic-computer.jpg" alt="Basic Computer Skills, 80 hours certificate"></a><figcaption>Basic Computer Skills, 80 hours</figcaption></figure></div>
+    </div>
+  </section>
+
+  <section class="section white" id="experience">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Professional Experience</div><h2>Education and community engagement</h2></div>
+      <div class="timeline">
+        <div class="timeline-item"><span class="date">May 2025 – Present</span><h3>As-Sunnah Foundation, Bangladesh</h3><p><strong>Islamic Educator &amp; Dawah-related Responsibilities</strong></p><p>Serving in the English Language Program; teaching Qur’an, Tajweed, Hadith, Islamic Studies and Salah-related knowledge; guiding students; participating in Dawah, counselling, Khutbah, Imamat and educational coordination.</p></div>
+        <div class="timeline-item"><span class="date">2024</span><h3>Gawsia Islamia Fazil Madrasa</h3><p><strong>Arabic Teacher</strong></p><p>Taught Arabic and supported students in their Islamic educational development.</p></div>
+        <div class="timeline-item"><span class="date">Additional Experience</span><h3>Islamic Teaching &amp; Dawah</h3><p>Teaching experience in Islamic educational institutions and involvement in Islamic education and Dawah activities.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Areas of Work</div><h2>Knowledge, teaching and communication</h2></div>
+      <div class="skill-list">
+        <span class="pill">Qur’an &amp; Tajweed Teaching</span><span class="pill">Islamic Studies &amp; Hadith</span><span class="pill">Islamic Dawah</span><span class="pill">Khutbah &amp; Imamat</span><span class="pill">Student Guidance &amp; Counselling</span><span class="pill">Teaching &amp; Public Speaking</span><span class="pill">Institutional Coordination</span><span class="pill">Writing &amp; Content Development</span><span class="pill">Digital Learning &amp; AI Tools</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white" id="media">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Media &amp; Activities</div><h2>Selected moments from my work</h2><p>Classes, talks and educational activities.</p></div>
+      <div class="media-grid"><article class="media-card"><img loading="lazy" src="assets/photos/class-quran.jpg" alt="Qur’an class"><div class="media-body"><h3>Qur’an class</h3><p>Teaching Qur’an recitation to students.</p></div></article><article class="media-card"><img loading="lazy" src="assets/photos/class-arabic.jpg" alt="Arabic alphabet class"><div class="media-body"><h3>Arabic alphabet class</h3><p>Teaching the Arabic alphabet and pronunciation.</p></div></article><article class="media-card"><img loading="lazy" src="assets/photos/speaking-1.jpg" alt="Public speaking"><div class="media-body"><h3>Public speaking</h3><p>Addressing an As-Sunnah Foundation programme.</p></div></article><article class="media-card"><img loading="lazy" src="assets/photos/speaking-2.jpg" alt="Public speaking"><div class="media-body"><h3>Public speaking</h3><p>Speaking at an educational event.</p></div></article><article class="media-card"><img loading="lazy" src="assets/photos/crest.jpg" alt="Diploma ceremony"><div class="media-body"><h3>Diploma ceremony</h3><p>Receiving a commemorative crest at the closing ceremony of Batch 1, Post Graduate Diploma in Islamic Dawah.</p></div></article><article class="media-card"><img loading="lazy" src="assets/photos/batch-1.jpg" alt="Batch 1"><div class="media-body"><h3>Batch 1</h3><p>With the Batch 1 Islamic Dawah diploma cohort.</p></div></article><article class="media-card"><img loading="lazy" src="assets/photos/presentation.jpg" alt="Group presentation"><div class="media-body"><h3>Group presentation</h3><p>A presentation session during the Dawah diploma programme.</p></div></article><article class="media-card"><img loading="lazy" src="assets/photos/study-circle.jpg" alt="Study circle"><div class="media-body"><h3>Study circle</h3><p>Guiding students in a group learning session.</p></div></article><article class="media-card"><img loading="lazy" src="assets/photos/office.jpg" alt="Educational coordination"><div class="media-body"><h3>Educational coordination</h3><p>Institutional coordination and administrative work.</p></div></article></div>
+    </div>
+  </section>
+
+  <section class="section" id="writing">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Writing &amp; Publications</div><h2>Articles, reflections and learning resources</h2><p>Use this section for original articles, educational notes, book projects and downloadable resources.</p></div>
+      <div class="cards">
+        <article class="card"><span class="num">ARTICLE</span><h3>Islamic Dawah &amp; Communication</h3><p>Add a short summary of an article and link to the full publication.</p><span class="meta">Add article link</span></article>
+        <article class="card"><span class="num">EDUCATIONAL RESOURCE</span><h3>Qur’an &amp; Islamic Learning</h3><p>Share teaching notes, lesson resources or carefully referenced educational material.</p><span class="meta">Add resource link</span></article>
+        <article class="card"><span class="num">PUBLICATION</span><h3>Books &amp; Long-form Projects</h3><p>Introduce your published or completed works. Mark works in progress clearly.</p><span class="meta">Add publication details</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white" id="social">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Find Me Online</div><h2>Connect across platforms</h2><p>Official public profile.</p></div>
+      <div class="social-grid">
+        <a class="social" href="https://www.facebook.com/share/1HWPkJNRuT/" target="_blank" rel="noopener"><span class="icon">f</span><span>Facebook<small>Follow on Facebook</small></span></a>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="wrap">
+      <div class="contact-row">
+        <div class="section-head"><div class="kicker">Contact</div><h2>For teaching, Dawah and professional enquiries</h2><p>For relevant educational, speaking and professional enquiries, please use the contact details below.</p></div>
+        <div><p><strong>Email</strong><br><a class="email" href="mailto:khaledsaifullahrakib95@gmail.com">khaledsaifullahrakib95@gmail.com</a></p><p><strong>Location</strong><br>Dhaka, Bangladesh</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap footer-row"><span>© <span id="year"></span> Khalid Saifullah Rakib. All rights reserved.</span><span>Personal portfolio · Bangladesh</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));</script>
+</body>
+</html>
